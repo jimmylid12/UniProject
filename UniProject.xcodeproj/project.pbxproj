@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B86513423E9E7130072360F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B86513323E9E7130072360F /* GoogleService-Info.plist */; };
+		2B86513623E9E9570072360F /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86513523E9E9570072360F /* Signup.swift */; };
+		2B86513A23EA29940072360F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86513923EA29940072360F /* HomePage.swift */; };
+		2B86513C23EACB8D0072360F /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86513B23EACB8D0072360F /* LoginPage.swift */; };
 		2BD41C1523E9E4C100AEB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C1423E9E4C100AEB37B /* AppDelegate.swift */; };
 		2BD41C1723E9E4C100AEB37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C1623E9E4C100AEB37B /* SceneDelegate.swift */; };
 		2BD41C1923E9E4C100AEB37B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C1823E9E4C100AEB37B /* ViewController.swift */; };
@@ -15,6 +19,9 @@
 		2BD41C2123E9E4C200AEB37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD41C1F23E9E4C200AEB37B /* LaunchScreen.storyboard */; };
 		2BD41C2C23E9E4C200AEB37B /* UniProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C2B23E9E4C200AEB37B /* UniProjectTests.swift */; };
 		2BD41C3723E9E4C200AEB37B /* UniProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C3623E9E4C200AEB37B /* UniProjectUITests.swift */; };
+		450A30524D5093189315008B /* Pods_UniProject_UniProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02787F1C1180A92DC7FDD4CD /* Pods_UniProject_UniProjectUITests.framework */; };
+		68AB8C878F0E03931F4D3A5A /* Pods_UniProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF50A3925F3922D0B896C6D /* Pods_UniProjectTests.framework */; };
+		C156FACC2F6CF6F885D61B86 /* Pods_UniProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939D07BAC8D35FAAAC57C3A5 /* Pods_UniProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02787F1C1180A92DC7FDD4CD /* Pods_UniProject_UniProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniProject_UniProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C7C36A3D63574DCE42276E0 /* Pods-UniProject-UniProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProject-UniProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-UniProject-UniProjectUITests/Pods-UniProject-UniProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B86513323E9E7130072360F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B86513523E9E9570072360F /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		2B86513923EA29940072360F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		2B86513B23EACB8D0072360F /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		2BD41C1123E9E4C100AEB37B /* UniProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD41C1423E9E4C100AEB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD41C1623E9E4C100AEB37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,13 @@
 		2BD41C3223E9E4C200AEB37B /* UniProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD41C3623E9E4C200AEB37B /* UniProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniProjectUITests.swift; sourceTree = "<group>"; };
 		2BD41C3823E9E4C200AEB37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435E0E035337D77854A7F64D /* Pods-UniProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProject.release.xcconfig"; path = "Target Support Files/Pods-UniProject/Pods-UniProject.release.xcconfig"; sourceTree = "<group>"; };
+		4B320A24A17D14CE341F4278 /* Pods-UniProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-UniProjectTests/Pods-UniProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		939D07BAC8D35FAAAC57C3A5 /* Pods_UniProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979F1FBA828A9CD3BDCF681B /* Pods-UniProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProject.debug.xcconfig"; path = "Target Support Files/Pods-UniProject/Pods-UniProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF50A3925F3922D0B896C6D /* Pods_UniProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D872DABE67C383AF845F70D4 /* Pods-UniProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProjectTests.release.xcconfig"; path = "Target Support Files/Pods-UniProjectTests/Pods-UniProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3E45BB290A1ADDD71321BE0 /* Pods-UniProject-UniProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProject-UniProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-UniProject-UniProjectUITests/Pods-UniProject-UniProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C156FACC2F6CF6F885D61B86 /* Pods_UniProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68AB8C878F0E03931F4D3A5A /* Pods_UniProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450A30524D5093189315008B /* Pods_UniProject_UniProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				2BD41C2A23E9E4C200AEB37B /* UniProjectTests */,
 				2BD41C3523E9E4C200AEB37B /* UniProjectUITests */,
 				2BD41C1223E9E4C100AEB37B /* Products */,
+				80B8A19ACA60F5C770A11E88 /* Pods */,
+				DE9EB042480C25B42E31660D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +127,14 @@
 				2BD41C1423E9E4C100AEB37B /* AppDelegate.swift */,
 				2BD41C1623E9E4C100AEB37B /* SceneDelegate.swift */,
 				2BD41C1823E9E4C100AEB37B /* ViewController.swift */,
+				2B86513323E9E7130072360F /* GoogleService-Info.plist */,
 				2BD41C1A23E9E4C100AEB37B /* Main.storyboard */,
 				2BD41C1D23E9E4C200AEB37B /* Assets.xcassets */,
 				2BD41C1F23E9E4C200AEB37B /* LaunchScreen.storyboard */,
 				2BD41C2223E9E4C200AEB37B /* Info.plist */,
+				2B86513523E9E9570072360F /* Signup.swift */,
+				2B86513923EA29940072360F /* HomePage.swift */,
+				2B86513B23EACB8D0072360F /* LoginPage.swift */,
 			);
 			path = UniProject;
 			sourceTree = "<group>";
@@ -128,6 +157,29 @@
 			path = UniProjectUITests;
 			sourceTree = "<group>";
 		};
+		80B8A19ACA60F5C770A11E88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				979F1FBA828A9CD3BDCF681B /* Pods-UniProject.debug.xcconfig */,
+				435E0E035337D77854A7F64D /* Pods-UniProject.release.xcconfig */,
+				0C7C36A3D63574DCE42276E0 /* Pods-UniProject-UniProjectUITests.debug.xcconfig */,
+				E3E45BB290A1ADDD71321BE0 /* Pods-UniProject-UniProjectUITests.release.xcconfig */,
+				4B320A24A17D14CE341F4278 /* Pods-UniProjectTests.debug.xcconfig */,
+				D872DABE67C383AF845F70D4 /* Pods-UniProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE9EB042480C25B42E31660D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				939D07BAC8D35FAAAC57C3A5 /* Pods_UniProject.framework */,
+				02787F1C1180A92DC7FDD4CD /* Pods_UniProject_UniProjectUITests.framework */,
+				BCF50A3925F3922D0B896C6D /* Pods_UniProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD41C3B23E9E4C200AEB37B /* Build configuration list for PBXNativeTarget "UniProject" */;
 			buildPhases = (
+				0AD354FE19E680AFDF254A6A /* [CP] Check Pods Manifest.lock */,
 				2BD41C0D23E9E4C100AEB37B /* Sources */,
 				2BD41C0E23E9E4C100AEB37B /* Frameworks */,
 				2BD41C0F23E9E4C100AEB37B /* Resources */,
+				7199A60FDBA43145C1EA6DD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD41C3E23E9E4C200AEB37B /* Build configuration list for PBXNativeTarget "UniProjectTests" */;
 			buildPhases = (
+				E8116EE4AE5694F98E5EF7B5 /* [CP] Check Pods Manifest.lock */,
 				2BD41C2323E9E4C200AEB37B /* Sources */,
 				2BD41C2423E9E4C200AEB37B /* Frameworks */,
 				2BD41C2523E9E4C200AEB37B /* Resources */,
@@ -170,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD41C4123E9E4C200AEB37B /* Build configuration list for PBXNativeTarget "UniProjectUITests" */;
 			buildPhases = (
+				8067A4FD68598B5818D0AF03 /* [CP] Check Pods Manifest.lock */,
 				2BD41C2E23E9E4C200AEB37B /* Sources */,
 				2BD41C2F23E9E4C200AEB37B /* Frameworks */,
 				2BD41C3023E9E4C200AEB37B /* Resources */,
+				AE3FE132AC701F214BFD20A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD41C2123E9E4C200AEB37B /* LaunchScreen.storyboard in Resources */,
+				2B86513423E9E7130072360F /* GoogleService-Info.plist in Resources */,
 				2BD41C1E23E9E4C200AEB37B /* Assets.xcassets in Resources */,
 				2BD41C1C23E9E4C100AEB37B /* Main.storyboard in Resources */,
 			);
@@ -254,13 +312,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AD354FE19E680AFDF254A6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7199A60FDBA43145C1EA6DD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniProject/Pods-UniProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniProject/Pods-UniProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UniProject/Pods-UniProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8067A4FD68598B5818D0AF03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniProject-UniProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3FE132AC701F214BFD20A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniProject-UniProjectUITests/Pods-UniProject-UniProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniProject-UniProjectUITests/Pods-UniProject-UniProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UniProject-UniProjectUITests/Pods-UniProject-UniProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8116EE4AE5694F98E5EF7B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BD41C0D23E9E4C100AEB37B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BD41C1923E9E4C100AEB37B /* ViewController.swift in Sources */,
+				2B86513A23EA29940072360F /* HomePage.swift in Sources */,
+				2B86513623E9E9570072360F /* Signup.swift in Sources */,
 				2BD41C1523E9E4C100AEB37B /* AppDelegate.swift in Sources */,
+				2B86513C23EACB8D0072360F /* LoginPage.swift in Sources */,
 				2BD41C1723E9E4C100AEB37B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +596,7 @@
 		};
 		2BD41C3C23E9E4C200AEB37B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979F1FBA828A9CD3BDCF681B /* Pods-UniProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +614,7 @@
 		};
 		2BD41C3D23E9E4C200AEB37B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 435E0E035337D77854A7F64D /* Pods-UniProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +632,7 @@
 		};
 		2BD41C3F23E9E4C200AEB37B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B320A24A17D14CE341F4278 /* Pods-UniProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +654,7 @@
 		};
 		2BD41C4023E9E4C200AEB37B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D872DABE67C383AF845F70D4 /* Pods-UniProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +676,7 @@
 		};
 		2BD41C4223E9E4C200AEB37B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7C36A3D63574DCE42276E0 /* Pods-UniProject-UniProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +696,7 @@
 		};
 		2BD41C4323E9E4C200AEB37B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E45BB290A1ADDD71321BE0 /* Pods-UniProject-UniProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

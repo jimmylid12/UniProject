@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>914616439234-09h218rui0jsv71roe8vfb14a8hhbi1n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.914616439234-09h218rui0jsv71roe8vfb14a8hhbi1n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhslmhfTA46NP8ITcQC3b9z34GVl0nqQo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>914616439234</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>final-year-project.UniProject</string>
+	<key>PROJECT_ID</key>
+	<string>uniprojec</string>
+	<key>STORAGE_BUCKET</key>
+	<string>uniprojec.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:914616439234:ios:7b21a5110ff9f6492a865b</string>
+	<key>DATABASE_URL</key>
+	<string>https://uniprojec.firebaseio.com</string>
+</dict>
+</plist>
