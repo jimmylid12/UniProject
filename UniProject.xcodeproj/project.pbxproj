@@ -11,6 +11,7 @@
 		2B86513623E9E9570072360F /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86513523E9E9570072360F /* Signup.swift */; };
 		2B86513A23EA29940072360F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86513923EA29940072360F /* HomePage.swift */; };
 		2B86513C23EACB8D0072360F /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86513B23EACB8D0072360F /* LoginPage.swift */; };
+		2B87155F23EC5B5800A6EB47 /* StaffLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87155E23EC5B5800A6EB47 /* StaffLogin.swift */; };
 		2BD41C1523E9E4C100AEB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C1423E9E4C100AEB37B /* AppDelegate.swift */; };
 		2BD41C1723E9E4C100AEB37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C1623E9E4C100AEB37B /* SceneDelegate.swift */; };
 		2BD41C1923E9E4C100AEB37B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD41C1823E9E4C100AEB37B /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		2B86513523E9E9570072360F /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		2B86513923EA29940072360F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		2B86513B23EACB8D0072360F /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		2B87155E23EC5B5800A6EB47 /* StaffLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLogin.swift; sourceTree = "<group>"; };
 		2BD41C1123E9E4C100AEB37B /* UniProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD41C1423E9E4C100AEB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD41C1623E9E4C100AEB37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				2B86513523E9E9570072360F /* Signup.swift */,
 				2B86513923EA29940072360F /* HomePage.swift */,
 				2B86513B23EACB8D0072360F /* LoginPage.swift */,
+				2B87155E23EC5B5800A6EB47 /* StaffLogin.swift */,
 			);
 			path = UniProject;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				2BD41C1523E9E4C100AEB37B /* AppDelegate.swift in Sources */,
 				2B86513C23EACB8D0072360F /* LoginPage.swift in Sources */,
 				2BD41C1723E9E4C100AEB37B /* SceneDelegate.swift in Sources */,
+				2B87155F23EC5B5800A6EB47 /* StaffLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
