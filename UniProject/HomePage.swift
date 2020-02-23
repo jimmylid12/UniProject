@@ -26,9 +26,6 @@ class HomePage: UIViewController
         
     }
     
-   
-    
-   
     
 
     @IBAction func logout(_ sender: Any)

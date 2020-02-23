@@ -24,8 +24,7 @@ class Signup: UIViewController {
         
     }
     
-
-    @IBAction func SignUp(_ sender: Any)
+   @IBAction func SignUp(_ sender: Any)
     {
         
         if signup.text == ""
@@ -45,11 +44,12 @@ class Signup: UIViewController {
                 if error == nil
                 {
                     print("You have successfully signed up")
+                   
                     let currentUser = Auth.auth().currentUser
                     
-                    let user = ["Name": self.signup.text! as String]
-                    
-                    self.ref.child("Users").child(currentUser!.uid).setValue(user)
+//                    let user = ["Name": self.signup.text! as String]
+//
+//                    self.ref.child("Users").child(currentUser!.uid).setValue(user)
                     
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
                     
