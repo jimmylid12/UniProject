@@ -10,10 +10,10 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-
-class Signup: UIViewController {
+//Allows staff to create an account an login by taking a username and password
+class Signup: UIViewController
+{
     @IBOutlet weak var signup: UITextField!
-    
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userName: UITextField!
     var ref : DatabaseReference!

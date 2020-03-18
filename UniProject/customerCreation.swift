@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+//Allows staff to create a user if they havent already placed an order for a product
 class customerCreation: UIViewController
 {
 
@@ -35,23 +36,19 @@ class customerCreation: UIViewController
     
     func addCustomerInformation()
     {
-        let customer = [
+    let customer = [
                       "CustomerName": CustomerName.text! as String,
                       "CustomerAddress":CustomerAddress.text! as String,
                       "CustomerPostCode": CustomerPostCode.text! as String,
                       "CustomerTelephone": CustomerTelephone.text! as String
-        ]
+    ]
 
         ref.childByAutoId().setValue(customer)
         
         ref.observe(.value, with: {snapshot in})
         
     }
-    
-    
-    
 
-  
     @IBAction func AddCustomer(_ sender: Any)
     {
         addCustomerInformation() //calls upload image pic which in turn calls add inoformation

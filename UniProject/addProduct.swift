@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+//This is what allows the admin team to add a produc to the datbase
 class addProduct: UIViewController {
 
     
@@ -57,7 +58,7 @@ class addProduct: UIViewController {
     {
         super.viewDidLoad()
        
-        ref = Database.database().reference().child("Users").child("products")
+        ref = Database.database().reference().child("products")
         NSLog("products")
        
         

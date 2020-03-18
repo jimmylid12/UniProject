@@ -10,6 +10,7 @@
 		2B54049023FEA01700170F5E /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54048F23FEA01700170F5E /* testing.swift */; };
 		2B54049223FEA4B700170F5E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54049123FEA4B700170F5E /* TableViewCell.swift */; };
 		2B54049423FEA53800170F5E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54049323FEA53800170F5E /* Model.swift */; };
+		2B59DD8824226EC400CA458E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59DD8724226EC400CA458E /* TableViewController.swift */; };
 		2B6D9CFB23F06AC100118BC3 /* addProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D9CFA23F06AC100118BC3 /* addProduct.swift */; };
 		2B7026FF23FC1E9B00F23A67 /* searchForProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7026FE23FC1E9B00F23A67 /* searchForProduct.swift */; };
 		2B86513423E9E7130072360F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B86513323E9E7130072360F /* GoogleService-Info.plist */; };
@@ -56,6 +57,7 @@
 		2B54048F23FEA01700170F5E /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
 		2B54049123FEA4B700170F5E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2B54049323FEA53800170F5E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2B59DD8724226EC400CA458E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2B6D9CFA23F06AC100118BC3 /* addProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addProduct.swift; sourceTree = "<group>"; };
 		2B7026FE23FC1E9B00F23A67 /* searchForProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchForProduct.swift; sourceTree = "<group>"; };
 		2B86513323E9E7130072360F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				2B54048F23FEA01700170F5E /* testing.swift */,
 				2B54049123FEA4B700170F5E /* TableViewCell.swift */,
 				2B54049323FEA53800170F5E /* Model.swift */,
+				2B59DD8724226EC400CA458E /* TableViewController.swift */,
 			);
 			path = UniProject;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				2BEA3E0A23F0C54F00088D29 /* customerCreation.swift in Sources */,
 				2BD41C1723E9E4C100AEB37B /* SceneDelegate.swift in Sources */,
 				2BB93D6223F029590095505F /* staffHomePage.swift in Sources */,
+				2B59DD8824226EC400CA458E /* TableViewController.swift in Sources */,
 				2B87155F23EC5B5800A6EB47 /* StaffLogin.swift in Sources */,
 				2BB93D6023F027C80095505F /* createStaffUser.swift in Sources */,
 				2B6D9CFB23F06AC100118BC3 /* addProduct.swift in Sources */,
@@ -636,6 +640,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUCJTDU9GK;
 				INFOPLIST_FILE = UniProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -654,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LUCJTDU9GK;
 				INFOPLIST_FILE = UniProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

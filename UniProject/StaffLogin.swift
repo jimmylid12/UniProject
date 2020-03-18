@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-
+//login page for admin so that they can add products to the database
 class StaffLogin: UIViewController
 {
 

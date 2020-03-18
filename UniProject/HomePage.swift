@@ -10,13 +10,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+//HomePage for the applicaton, allows a user to create an order or logout
 class HomePage: UIViewController
 {
-
-   
-    
-    
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
