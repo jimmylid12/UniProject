@@ -29,8 +29,8 @@ class customerCreation: UIViewController
     {
         super.viewDidLoad()
         guard let userID = Auth.auth().currentUser?.uid else {return}
-              ref = Database.database().reference().child("Users").child(userID).child("customers")
-              NSLog("customers")
+              ref = Database.database().reference().child("Customers")
+//              NSLog("customers")
   
     }
     

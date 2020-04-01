@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B465295242D0DCB00235B6B /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B465294242D0DCB00235B6B /* CustomerViewController.swift */; };
+		2B465297242D316300235B6B /* CustomerViewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B465296242D316300235B6B /* CustomerViewsController.swift */; };
 		2B54049023FEA01700170F5E /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54048F23FEA01700170F5E /* testing.swift */; };
 		2B54049223FEA4B700170F5E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54049123FEA4B700170F5E /* TableViewCell.swift */; };
 		2B54049423FEA53800170F5E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54049323FEA53800170F5E /* Model.swift */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		02787F1C1180A92DC7FDD4CD /* Pods_UniProject_UniProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniProject_UniProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7C36A3D63574DCE42276E0 /* Pods-UniProject-UniProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniProject-UniProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-UniProject-UniProjectUITests/Pods-UniProject-UniProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B465294242D0DCB00235B6B /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		2B465296242D316300235B6B /* CustomerViewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewsController.swift; sourceTree = "<group>"; };
 		2B54048F23FEA01700170F5E /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
 		2B54049123FEA4B700170F5E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2B54049323FEA53800170F5E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				2B54049123FEA4B700170F5E /* TableViewCell.swift */,
 				2B54049323FEA53800170F5E /* Model.swift */,
 				2B59DD8724226EC400CA458E /* TableViewController.swift */,
+				2B465294242D0DCB00235B6B /* CustomerViewController.swift */,
+				2B465296242D316300235B6B /* CustomerViewsController.swift */,
 			);
 			path = UniProject;
 			sourceTree = "<group>";
@@ -461,10 +467,12 @@
 				2BEA3E0A23F0C54F00088D29 /* customerCreation.swift in Sources */,
 				2BD41C1723E9E4C100AEB37B /* SceneDelegate.swift in Sources */,
 				2BB93D6223F029590095505F /* staffHomePage.swift in Sources */,
+				2B465295242D0DCB00235B6B /* CustomerViewController.swift in Sources */,
 				2B59DD8824226EC400CA458E /* TableViewController.swift in Sources */,
 				2B87155F23EC5B5800A6EB47 /* StaffLogin.swift in Sources */,
 				2BB93D6023F027C80095505F /* createStaffUser.swift in Sources */,
 				2B6D9CFB23F06AC100118BC3 /* addProduct.swift in Sources */,
+				2B465297242D316300235B6B /* CustomerViewsController.swift in Sources */,
 				2B7026FF23FC1E9B00F23A67 /* searchForProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ import FirebaseDatabase
 class TableViewController: UITableViewController,UISearchResultsUpdating
 {
    
-    
+    //updating
 
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -63,8 +63,7 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
     
     
 
-       
-        
+
         
  
   override   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -84,7 +83,7 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
         }
         
         cell.textLabel?.text = user?["Name"] as? String
-        cell.detailTextLabel?.text = user?["handle"] as? String
+        cell.detailTextLabel?.text = user?["Number"] as? String
         return cell
     }
     
@@ -111,4 +110,5 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
                }
 
 
+  
 }
