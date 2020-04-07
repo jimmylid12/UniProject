@@ -12,6 +12,7 @@ import Firebase
 
 class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    
     @IBOutlet weak var names: UITextField!
     @IBOutlet weak var number: UITextField!
     @IBOutlet weak var price: UITextField!
@@ -107,8 +108,67 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
    
-    
-    
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+   
+       //getting the selected artist
+       let product  = List[indexPath.row]
+   
+       //building an alert
+    let alertController = UIAlertController(title: product.name, message: "Give new values to update ", preferredStyle: .alert)
+   
+       //the confirm action taking the inputs
+       let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+           
+           //getting artist id
+        let name = product.name
+           
+           //getting new values
+        let price = alertController.textFields?[0].text
+        let number = alertController.textFields?[0].text
+        let info = alertController.textFields?[0].text
+          
+           
+           //calling the update method to update artist
+        self.update(name: name!, number: number!,price:price!,info: info!)
+       }
+   
+       //the cancel action doing nothing
+       let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+   
+       //adding two textfields to alert
+       alertController.addTextField { (textField) in
+        textField.text = product.prices
+       }
+       alertController.addTextField { (textField) in
+        textField.text = product.number
+       }
+    alertController.addTextField { (textField) in
+        textField.text = product.info
+    }
+   
+       //adding action
+       alertController.addAction(confirmAction)
+       alertController.addAction(cancelAction)
+   
+       //presenting dialog
+       present(alertController, animated: true, completion: nil)
+   }
+
+    func update( name:String, number:String,price:String,info:String)
+    {
+       let product = [
+           
+           "Name": name,
+           "Number": number,
+           "Price": price,
+           "Info": info
+           
+           
+       ]
+      ref.child(name).setValue(product)
+        
+        
+    }
     
     
 }

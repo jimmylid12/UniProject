@@ -15,8 +15,11 @@ import FirebaseDatabase
 class TableViewController: UITableViewController,UISearchResultsUpdating
 {
    
-    //updating
-
+    
+ 
+    
+    
+    
     let searchController = UISearchController(searchResultsController: nil)
     
     @IBOutlet var findproductsTableView: UITableView!
