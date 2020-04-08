@@ -69,10 +69,11 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
                     let Name = productObject?["Name"]
                     let Number  = productObject?["Number"]
                     let  Price = productObject?["Price"]
+                    let ID = productObject?["id"]
                     let Info = productObject?["Info"]
                     
                     //creating artist object with model and fetched values
-                    let product = Model(name: Name as! String?, number: Number as! String?, prices: Price as! String?, info: Info as! String?)
+                    let product = Model(id: ID as! String?,name: Name as! String?, number: Number as! String?, prices: Price as! String?, info: Info as! String?)
                     
                     //appending it to list
                     self.List.append(product)
@@ -92,8 +93,11 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func add() //function which adds the information to the database,adds them under the club within the database
     {
+         let key = ref.childByAutoId().key
+        
         let product = [
             
+            "id":key,
             "Name": names.text! as String,
             "Number": number.text! as String,
             "Price": price.text! as String,
@@ -120,21 +124,28 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
            
            //getting artist id
-        let name = product.name
+        let id = product.id
            
            //getting new values
+        let name = alertController.textFields?[1].text
         let price = alertController.textFields?[0].text
-        let number = alertController.textFields?[0].text
-        let info = alertController.textFields?[0].text
+        let number = alertController.textFields?[2].text
+        let info = alertController.textFields?[3].text
           
            
            //calling the update method to update artist
-        self.update(name: name!, number: number!,price:price!,info: info!)
+        self.update(id: id!,name: name!, number: number!,price:price!,info: info!)
        }
    
        //the cancel action doing nothing
        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
-   
+       
+    
+    alertController.addTextField { (textField) in
+           textField.text = product.name
+       }
+
+    
        //adding two textfields to alert
        alertController.addTextField { (textField) in
         textField.text = product.prices
@@ -154,10 +165,10 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
        present(alertController, animated: true, completion: nil)
    }
 
-    func update( name:String, number:String,price:String,info:String)
+    func update(id:String,name:String, number:String,price:String,info:String)
     {
        let product = [
-           
+           "id":id,
            "Name": name,
            "Number": number,
            "Price": price,
@@ -165,7 +176,7 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource{
            
            
        ]
-      ref.child(name).setValue(product)
+      ref.child(id).setValue(product)
         
         
     }
