@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 
 //login page for admin so that they can add products to the database
-class StaffLogin: UIViewController
+class StaffLogin: UIViewController, UITextFieldDelegate
 {
 
     @IBOutlet weak var staffUserName: UITextField!
@@ -21,8 +21,17 @@ class StaffLogin: UIViewController
     {
         super.viewDidLoad()
 
+       staffPassword.delegate = self;
+       }
        
-    }
+       override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           self.view.endEditing(true)
+       }
+
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder()
+           return true
+           }
     
 
     @IBAction func staffSignIn(_ sender: Any)

@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-//This is what allows the admin team to add a produc to the datbase
+//This is what allows the admin team to add a product to the datbase
 class addProduct: UIViewController {
 
     

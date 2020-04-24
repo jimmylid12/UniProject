@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 
 //Allows the staff to create an account
-class createStaffUser: UIViewController
+class createStaffUser: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var createStaffUserName: UITextField!
     @IBOutlet weak var createStaffPassword: UITextField!
@@ -20,8 +20,17 @@ class createStaffUser: UIViewController
     {
         super.viewDidLoad()
         ref = Database.database().reference()
+        createStaffPassword.delegate = self;
+        }
         
-    }
+        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+        }
+
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+            }
     
     
     

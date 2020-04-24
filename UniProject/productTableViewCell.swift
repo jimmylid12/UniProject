@@ -9,6 +9,7 @@
 
 import UIKit
 
+//this adds the stepper in order to add a product to the basket
 class productTableViewCell: UITableViewCell {
 
    
@@ -16,28 +17,32 @@ class productTableViewCell: UITableViewCell {
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var label: UILabel!
     
+   
     
-    override func awakeFromNib() {
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
-        // Initialization code
+        self.label.text = "0"
     }
-
+    @IBAction func stepperbutton(_ sender: UIStepper)
+    {
+         label.text = Int(sender.value).description
+         
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
-    
-  
-   
-    @IBAction func chg(_ sender: UIStepper)
-    {
-        self.label.text = String((sender as UIStepper).value);
-    }
-    
-    
-    
-   
-    
+ 
 }
+   
+   
+    
+    
+    
+   
+    
+

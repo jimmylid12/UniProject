@@ -76,10 +76,16 @@ class CustomerViewsController: UITableViewController,UISearchResultsUpdating
            }
            
            cell.textLabel?.text = user?["Name"] as? String
-           cell.detailTextLabel?.text = user?["address"] as? String
+           cell.detailTextLabel?.text = user?["Price"] as? String
            return cell
        }
        
+    
+  
+
+    
+    
+    
            
            func updateSearchResults(for searchController: UISearchController)
            {

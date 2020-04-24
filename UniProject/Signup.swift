@@ -22,6 +22,17 @@ class Signup: UIViewController
         super.viewDidLoad()
         ref = Database.database().reference()
         
+         let borderColor : UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+                           password.layer.borderWidth = 1
+                           signup.layer.borderWidth = 1
+                           password.layer.borderColor = borderColor.cgColor
+                            signup.layer.borderColor = borderColor.cgColor
+                            password.layer.cornerRadius = 5.0
+                            signup.layer.cornerRadius = 5.0
+        
+        
+        
+        
     }
     
    @IBAction func SignUp(_ sender: Any)
@@ -45,7 +56,7 @@ class Signup: UIViewController
                 {
                     print("You have successfully signed up")
                    
-                    let currentUser = Auth.auth().currentUser
+//                    let currentUser = Auth.auth().currentUser
                     
 //                    let user = ["Name": self.signup.text! as String]
 //

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//Model for classes, this allows the tableview to display information from firebase
 
 class TableViewCell: UITableViewCell {
     
