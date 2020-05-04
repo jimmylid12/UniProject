@@ -23,28 +23,23 @@ class LoginPage: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         let borderColor : UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
-         passwordTextField.layer.borderWidth = 1
+        passwordTextField.layer.borderWidth = 1
         emailTextField.layer.borderWidth = 1
         passwordTextField.layer.borderColor = borderColor.cgColor
-         emailTextField.layer.borderColor = borderColor.cgColor
-         passwordTextField.layer.cornerRadius = 5.0
+        emailTextField.layer.borderColor = borderColor.cgColor
+        passwordTextField.layer.cornerRadius = 5.0
         emailTextField.layer.cornerRadius = 5.0
-      
-        
-        
-        
-        
         passwordTextField.delegate = self;
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-        }
+    }
     
     
     

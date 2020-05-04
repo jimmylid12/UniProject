@@ -22,20 +22,20 @@ class Signup: UIViewController
         super.viewDidLoad()
         ref = Database.database().reference()
         
-         let borderColor : UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
-                           password.layer.borderWidth = 1
-                           signup.layer.borderWidth = 1
-                           password.layer.borderColor = borderColor.cgColor
-                            signup.layer.borderColor = borderColor.cgColor
-                            password.layer.cornerRadius = 5.0
-                            signup.layer.cornerRadius = 5.0
+        let borderColor : UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+        password.layer.borderWidth = 1
+        signup.layer.borderWidth = 1
+        password.layer.borderColor = borderColor.cgColor
+        signup.layer.borderColor = borderColor.cgColor
+        password.layer.cornerRadius = 5.0
+        signup.layer.cornerRadius = 5.0
         
         
         
         
     }
     
-   @IBAction func SignUp(_ sender: Any)
+    @IBAction func SignUp(_ sender: Any)
     {
         
         if signup.text == ""
@@ -55,19 +55,19 @@ class Signup: UIViewController
                 if error == nil
                 {
                     print("You have successfully signed up")
-                   
-//                    let currentUser = Auth.auth().currentUser
                     
-//                    let user = ["Name": self.signup.text! as String]
-//
-//                    self.ref.child("Users").child(currentUser!.uid).setValue(user)
+                    //                    let currentUser = Auth.auth().currentUser
+                    
+                    //                    let user = ["Name": self.signup.text! as String]
+                    //
+                    //                    self.ref.child("Users").child(currentUser!.uid).setValue(user)
                     
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
                     
                     
                     
-                  let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
-                  self.present(vc!, animated: true, completion: nil)
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    self.present(vc!, animated: true, completion: nil)
                     
                 }
                 else
@@ -83,5 +83,5 @@ class Signup: UIViewController
         }
     }
     
-
+    
 }

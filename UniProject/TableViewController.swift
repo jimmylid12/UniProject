@@ -14,7 +14,7 @@ import FirebaseDatabase
 
 class TableViewController: UITableViewController,UISearchResultsUpdating
 {
-   let searchController = UISearchController(searchResultsController: nil)
+    let searchController = UISearchController(searchResultsController: nil)
     
     @IBOutlet var findproductsTableView: UITableView!
     
@@ -26,7 +26,7 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
         searchController.searchResultsUpdater = self
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
@@ -37,20 +37,20 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
             self.tableView.insertRows(at: [IndexPath(row:self.productsArray.count-1,section:0)], with:
                 UITableView.RowAnimation.automatic)
         }) {(error) in
-        
+            
             print (error.localizedDescription)
         }
-        }
-   
-
-  override func numberOfSections(in tableView: UITableView) -> Int
-  {
+    }
+    
+    
+    override func numberOfSections(in tableView: UITableView) -> Int
+    {
         
         return 1
     }
-
-      override  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-        {
+    
+    override  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         // #warning Incomplete implementation, return the number of rows
         if searchController.isActive && searchController.searchBar.text != ""{
             return filteredProducts.count
@@ -59,14 +59,14 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
     }
     
     
-
-
-        
- 
-  override   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-     {
+    
+    
+    
+    
+    override   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        
         let user : NSDictionary?
         
         if searchController.isActive && searchController.searchBar.text != ""
@@ -84,28 +84,32 @@ class TableViewController: UITableViewController,UISearchResultsUpdating
         return cell
     }
     
+    
+    func updateSearchResults(for searchController: UISearchController)
+    {
         
-        func updateSearchResults(for searchController: UISearchController)
-        {
-            
-            filterContent(searchText: self.searchController.searchBar.text!)
-
-         }
+        filterContent(searchText: self.searchController.searchBar.text!)
         
-        func filterContent(searchText:String)
-               {
-                   self.filteredProducts = self.productsArray.filter
-                    { user in
-                       let username = user!["Name"] as? String
-                       return (username?.lowercased().contains(searchText.lowercased()))!
-                   
-               
-                  
-                   
-               }
-                   tabView.reloadData()
-               }
-
-
+    }
+    
+    func filterContent(searchText:String)
+    {
+        self.filteredProducts = self.productsArray.filter
+            { user in
+                let username = user!["Name"] as? String
+                return (username?.lowercased().contains(searchText.lowercased()))!
+                
+                
+                
+                
+        }
+        tabView.reloadData()
+    }
+    
+    
   
+    
+    
 }
+
+

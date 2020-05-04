@@ -12,69 +12,80 @@ import Firebase
 
 class CustomerViewController: UIViewController
 {
-
     
+    @IBOutlet weak var productNumber: UITextField!
+    
+    
+    @IBOutlet weak var productprice: UITextField!
+    
+    @IBOutlet weak var products: UITextField!
     @IBOutlet weak var Name: UITextField!
     @IBOutlet weak var adress: UITextField!
     @IBOutlet weak var postcode: UITextField!
     @IBOutlet weak var telephonee: UITextField!
-     var ref: DatabaseReference!
-     var customer = "customer"
+    var ref: DatabaseReference!
+    var customer = "customer"
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-       ref = Database.database().reference().child("customers");
+        ref = Database.database().reference().child("order");
         
         let borderColor : UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
         Name.layer.borderWidth = 1
         adress.layer.borderWidth = 1
         postcode.layer.borderWidth = 1
         telephonee.layer.borderWidth = 1
-         Name.layer.borderColor = borderColor.cgColor
-         adress.layer.borderColor = borderColor.cgColor
-         postcode.layer.borderColor = borderColor.cgColor
-         telephonee.layer.borderColor = borderColor.cgColor
-          Name.layer.cornerRadius = 5.0
-         adress.layer.cornerRadius = 5.0
-         postcode.layer.cornerRadius = 5.0
-         telephonee.layer.cornerRadius = 5.0
+        Name.layer.borderColor = borderColor.cgColor
+        adress.layer.borderColor = borderColor.cgColor
+        postcode.layer.borderColor = borderColor.cgColor
+        telephonee.layer.borderColor = borderColor.cgColor
+        Name.layer.cornerRadius = 5.0
+        adress.layer.cornerRadius = 5.0
+        postcode.layer.cornerRadius = 5.0
+        telephonee.layer.cornerRadius = 5.0
         
         
     }
     
-
+    
     @IBAction func Upload(_ sender: Any)
     {
         
         add()
-      
         
-         NSLog("Uploading...")
+        
+        NSLog("Uploading...")
     }
     
     func add() //function which adds the information to the database,adds them under the club within the database
     {
         let key = ref.childByAutoId().key
         
-        let product = [
+        let customer = [
             
             
             "id":key,
             "Name": Name.text! as String,
             "Address": adress.text! as String,
             "Postcode": postcode.text! as String,
-            "Telephone": telephonee.text! as String
+            "Telephone": telephonee.text! as String,
+            //            "Product": products.text! as String,
+            //            "Product price": productprice.text! as String,
+            //            "prduct number": productNumber.text! as String
             
         ]
         
-        ref.childByAutoId().setValue(product)
+        ref.childByAutoId().setValue(customer)
         
         ref.observe(.value, with: {snapshot in})
         
+        
+        
+        
+        
+    }
     
     
     
-
-}
 }

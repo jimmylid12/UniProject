@@ -30,7 +30,7 @@ class staffHomePage: UIViewController
             {
                 try Auth.auth().signOut()
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "stafflogin")
-                 print("You have successfully logged out")
+                print("You have successfully logged out")
                 
                 present(vc, animated: true, completion: nil)
                 

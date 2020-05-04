@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 class CustomerModel
 {
@@ -29,6 +29,16 @@ class CustomerModel
         
         
     }
+    
+    //    init(snapshot: DataSnapshot) {
+    //        let snapshotValue = snapshot.value as! [String: AnyObject]
+    //        name = snapshotValue["name"] as? String
+    //        address = snapshotValue["address"] as? String
+    //        postcode = snapshotValue["postcode"] as? String
+    //       telephone = snapshotValue["telephone"] as? String
+    //    }
+    
+    
     
     
     

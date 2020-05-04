@@ -25,8 +25,8 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIm
     var ref: DatabaseReference!
     var imagePickerController : UIImagePickerController!
     var downloadURL = "temp"
-     var product = "product"
-      
+    var product = "product"
+    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return List.count
@@ -41,7 +41,7 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIm
         //the artist object
         let product: Model
         
-        //getting the artist of selected position
+        //getting the product of selected position
         product = List[indexPath.row]
         
         //adding values to labels
@@ -95,44 +95,44 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIm
     
     @IBAction func uploadtofirebase(_ sender: Any)
     {
-            uploadImagePic(img1: imageView.image!) //calls upload image pic which in turn calls add inoformation
-            
-            NSLog("Uploading...")
+        uploadImagePic(img1: imageView.image!) //calls upload image pic which in turn calls add inoformation
+        
+        NSLog("Uploading...")
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-           
-           var selectedImageFromPicker: UIImage?
-           if let editedImage = info[.editedImage] as? UIImage
-           {
-               selectedImageFromPicker = editedImage
-           }
-           else if let originalImage = info[.originalImage] as? UIImage
-           {
-               selectedImageFromPicker = originalImage
-           }
-           
-           if let selectedImage = selectedImageFromPicker
-           {
-               imageView.image = selectedImage
-           }
-           dismiss(animated: true, completion: nil)
-       }
+        
+        var selectedImageFromPicker: UIImage?
+        if let editedImage = info[.editedImage] as? UIImage
+        {
+            selectedImageFromPicker = editedImage
+        }
+        else if let originalImage = info[.originalImage] as? UIImage
+        {
+            selectedImageFromPicker = originalImage
+        }
+        
+        if let selectedImage = selectedImageFromPicker
+        {
+            imageView.image = selectedImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func addPicture(_ sender: Any)
     {
         let profileImagePicker = UIImagePickerController()
         profileImagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-           profileImagePicker.mediaTypes = [kUTTypeImage as String]
-           profileImagePicker.delegate = self
-           present(profileImagePicker, animated: true, completion: nil)
+        profileImagePicker.mediaTypes = [kUTTypeImage as String]
+        profileImagePicker.delegate = self
+        present(profileImagePicker, animated: true, completion: nil)
     }
     
     
     
     func add() //function which adds the information to the database,adds them under the product within the database
     {
-         let key = ref.childByAutoId().key
+        let key = ref.childByAutoId().key
         
         let product = [
             
@@ -142,7 +142,7 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIm
             "Price": price.text! as String,
             "Info": info.text! as String,
             "imgUrl":self.downloadURL as String
-                      
+            
         ]
         
         ref.childByAutoId().setValue(product)
@@ -151,73 +151,73 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIm
         
     }
     
-   
-   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-   
-       //getting the selected artist
-       let product  = List[indexPath.row]
-   
-       //building an alert
-    let alertController = UIAlertController(title: product.name, message: "Give new values to update ", preferredStyle: .alert)
-   
-       //the confirm action taking the inputs
-       let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
-           
-           //getting artist id
-        let id = product.id
-           
-           //getting new values
-        let name = alertController.textFields?[1].text
-         let number = alertController.textFields?[2].text
-        let price = alertController.textFields?[0].text
-       let info = alertController.textFields?[3].text
-          
-           
-           //calling the update method to update artist
-        self.update(id: id!,name: name!, number: number!,price:price!,info: info!)
-       }
-   
-       //the cancel action doing nothing
-      
     
-       
-    
-    alertController.addTextField { (textField) in
-           textField.text = product.name
-       }
-    alertController.addTextField { (textField) in
-           textField.text = product.number
-          }
-    
-       //adding two textfields to alert
-       alertController.addTextField { (textField) in
-        textField.text = product.prices
-       }
-      
-    alertController.addTextField { (textField) in
-        textField.text = product.info
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //getting the selected artist
+        let product  = List[indexPath.row]
+        
+        //building an alert
+        let alertController = UIAlertController(title: product.name, message: "Give new values to update ", preferredStyle: .alert)
+        
+        //the confirm action taking the inputs
+        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+            
+            //getting artist id
+            let id = product.id
+            
+            //getting new values
+            let name = alertController.textFields?[1].text
+            let number = alertController.textFields?[2].text
+            let price = alertController.textFields?[0].text
+            let info = alertController.textFields?[3].text
+            
+            
+            //calling the update method to update artist
+            self.update(id: id!,name: name!, number: number!,price:price!,info: info!)
+        }
+        
+        //the cancel action doing nothing
+        
+        
+        
+        
+        alertController.addTextField { (textField) in
+            textField.text = product.name
+        }
+        alertController.addTextField { (textField) in
+            textField.text = product.number
+        }
+        
+        //adding two textfields to alert
+        alertController.addTextField { (textField) in
+            textField.text = product.prices
+        }
+        
+        alertController.addTextField { (textField) in
+            textField.text = product.info
+        }
+        
+        //adding action
+        alertController.addAction(confirmAction)
+        //  alertController.addAction(cancelAction)
+        
+        //presenting dialog
+        present(alertController, animated: true, completion: nil)
     }
-   
-       //adding action
-       alertController.addAction(confirmAction)
-     //  alertController.addAction(cancelAction)
-   
-       //presenting dialog
-       present(alertController, animated: true, completion: nil)
-   }
-
+    
     func update(id:String,name:String, number:String,price:String,info:String)
     {
-       let product = [
-           "id":id,
-           "Name": name,
-           "Number": number,
-           "Price": price,
-           "Info": info
-           
-           
-       ]
-      ref.child(id).setValue(product)
+        let product = [
+            "id":id,
+            "Name": name,
+            "Number": number,
+            "Price": price,
+            "Info": info
+            
+            
+        ]
+        ref.child(id).setValue(product)
         
         
     }
@@ -225,40 +225,40 @@ class testing: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIm
     
     
     func uploadImagePic(img1 :UIImage)
-       {
-           guard let data = img1.jpegData(compressionQuality: 0.75) else { return }
-           // set upload path
-           let product = number.text!
-           let filePath = "\(product).jpg" // path where you wanted to store img in storage
-           let metaData = StorageMetadata()
-           metaData.contentType = "image/jpg"
-           
-           let storageRef = Storage.storage().reference()
-           
-           storageRef.child("club_profile").child(filePath).putData(data as Data, metadata: metaData){(metaData,error) in
-               if let error = error
-               {
-                   print(error.localizedDescription)
-                   self.downloadURL = "error"
-                   return
-               }
-               else
-               {
-                   // Fetch the download URL
-                   storageRef.child("club_profile").child(filePath).downloadURL
-                   {
-                       url, error in if error != nil
-                           {
-                               self.downloadURL = "error in loop"
-                           }
-                           else
-                           {
-                               self.downloadURL = url!.path
-                               self.add()
-                           }
-                   }
-               }
-           }
-       }
+    {
+        guard let data = img1.jpegData(compressionQuality: 0.75) else { return }
+        // set upload path
+        let product = number.text!
+        let filePath = "\(product).jpg" // path where you wanted to store img in storage
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        let storageRef = Storage.storage().reference()
+        
+        storageRef.child("club_profile").child(filePath).putData(data as Data, metadata: metaData){(metaData,error) in
+            if let error = error
+            {
+                print(error.localizedDescription)
+                self.downloadURL = "error"
+                return
+            }
+            else
+            {
+                // Fetch the download URL
+                storageRef.child("club_profile").child(filePath).downloadURL
+                    {
+                        url, error in if error != nil
+                        {
+                            self.downloadURL = "error in loop"
+                        }
+                        else
+                        {
+                            self.downloadURL = url!.path
+                            self.add()
+                        }
+                }
+            }
+        }
+    }
     
 }
