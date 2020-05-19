@@ -10,8 +10,8 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-//Allows the staff to create an account
-class createStaffUser: UIViewController, UITextFieldDelegate
+//Allows the admin staff to create an account
+class createStaffAdmin: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var createStaffUserName: UITextField!
     @IBOutlet weak var createStaffPassword: UITextField!
@@ -53,16 +53,8 @@ class createStaffUser: UIViewController, UITextFieldDelegate
                 if error == nil
                 {
                     print("You have successfully signed up")
-                    let currentUser = Auth.auth().currentUser
                     
-                    let user = ["Name": self.createStaffUserName.text! as String]
-                    
-                    self.ref.child("Users").child(currentUser!.uid).setValue(user)
-                    
-                    //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
-                    
-                    
-                    
+                
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "staffhomepage")
                     self.present(vc!, animated: true, completion: nil)
                     

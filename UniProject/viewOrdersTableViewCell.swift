@@ -8,23 +8,27 @@
 
 import UIKit
 
-class customersTableViewCell: UITableViewCell
+//labels which are assigned to the tableview cell to display relevant firebase data
+class viewOrdersTableViewCell: UITableViewCell
 {
-    @IBOutlet weak var Name: UILabel!
-    @IBOutlet weak var Address: UILabel!
-    @IBOutlet weak var Postcode: UILabel!
-    @IBOutlet weak var Telephone: UILabel!
+   
+    @IBOutlet weak var customerName: UILabel!
+    @IBOutlet weak var customerAddress: UILabel!
+  
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productPrice: UILabel!
+    
     override func awakeFromNib()
     {
         super.awakeFromNib()
-        // Initialization code
+     
     }
     
     override func setSelected(_ selected: Bool, animated: Bool)
     {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
+        
     }
     
 }

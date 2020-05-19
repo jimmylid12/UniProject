@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-//staff homepage with links to add a product to the database
+//staff homepage with links to edit the customer orders and logout
 class staffHomePage: UIViewController
 {
     
@@ -37,7 +37,7 @@ class staffHomePage: UIViewController
             } catch let error as NSError
             {
                 print(error.localizedDescription)
-                print ("test")
+               
                 
             }
             

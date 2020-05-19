@@ -10,8 +10,8 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-//HomePage for the applicaton, allows a user to create an order or logout
-class HomePage: UIViewController
+//HomePage for the applicaton, allows staff member to create an order or logout
+class homePage: UIViewController
 {
     @IBOutlet weak var search: UIButton!
     @IBOutlet weak var add: UIButton!
@@ -22,35 +22,11 @@ class HomePage: UIViewController
     {
         super.viewDidLoad()
         
-        //      search.backgroundColor = .black
-        //      search.layer.cornerRadius = 5
-        //      search.layer.borderWidth = 1
-        //      search.layer.borderColor = UIColor.black.cgColor
-        //
-        //        add.backgroundColor = .black
-        //             add.layer.cornerRadius = 5
-        //            add.layer.borderWidth = 1
-        //             add.layer.borderColor = UIColor.black.cgColor
-        //
-        //       viewC.backgroundColor = .black
-        //        viewC.layer.cornerRadius = 5
-        //        viewC.layer.borderWidth = 1
-        //        viewC.layer.borderColor = UIColor.black.cgColor
-        //
-        //        edit.backgroundColor = .black
-        //        edit.layer.cornerRadius = 5
-        //        edit.layer.borderWidth = 1
-        //        edit.layer.borderColor = UIColor.black.cgColor
-        //
-        //        logout.backgroundColor = .black
-        //              logout.layer.cornerRadius = 5
-        //               logout.layer.borderWidth = 1
-        //              logout.layer.borderColor = UIColor.black.cgColor
-        //
+    
     }
     
     
-    
+    //simple function which logs the user out of the application and takes you to the login screen
     @IBAction func logout(_ sender: Any)
     {
         
@@ -73,5 +49,8 @@ class HomePage: UIViewController
             
         }
     }
+    
+    
+    
     
 }
